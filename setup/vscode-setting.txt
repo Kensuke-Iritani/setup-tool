@@ -1,0 +1,32 @@
+{
+    // pythonのformatter関連
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        },
+    },
+    "isort.args": ["--profile", "black"],
+    "flake8.args": ["--max-line-length=100", "--max-complexity=10"],
+    "mypy-type-checker.args": [],
+    
+    // pythonのテスト関連
+    "playwright.reuseBrowser": false,
+    "python.testing.autoTestDiscoverOnSaveEnabled": true,
+    "python.testing.pytestArgs": ["--cov=src", "--cov-report", "xml"],
+    "coverage-gutters.showGutterCoverage": true,
+    "coverage-gutters.showRulerCoverage": true,
+    "coverage-gutters.showLineCoverage": true,
+    
+    // 表示
+    "editor.mouseWheelZoom": true,
+    "editor.fontFamily": "Source Han Code JP",
+    "editor.fontLigatures": true,
+    "workbench.iconTheme": "material-icon-theme",
+    
+    // 実行環境
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "terminal.integrated.enableMultLinePasteWarning": "never",
+}

@@ -1,0 +1,6 @@
+[
+    {
+        "key": "ctrl+shift+h",
+        "command": "extension.markdown-pdf.html"
+    }
+]
