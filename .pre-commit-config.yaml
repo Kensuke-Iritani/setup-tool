@@ -1,0 +1,13 @@
+repos:
+- repo: https://github.com/PyCQA/bandit
+  rev: 1.7.9
+  hooks:
+  - id: bandit
+    args:
+      - '-r'
+      - '-x'
+      - 'src/test_*'
+      - '-f'
+      - 'html'
+      - '-o'
+      - 'bandit-report.html'
